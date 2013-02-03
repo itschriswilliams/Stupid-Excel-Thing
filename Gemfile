@@ -5,7 +5,7 @@ gem 'rails', '3.1.0'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+
 gem "spreadsheet"
 gem "carrierwave"
 gem "mini_magick"
@@ -45,6 +45,7 @@ end
 
 group :development, :test do
   gem "mysql2", "0.3.6"
+  gem 'sqlite3-ruby', :require => 'sqlite3'  
   gem "letter_opener"
   gem "pry"
 end
